@@ -1,0 +1,10 @@
+# node modules
+node
+/node_modules
+
+# ide files
+.idea/
+
+# generated files
+
+dist

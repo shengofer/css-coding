@@ -1,0 +1,13 @@
+@import './base/reset';
+@import './variables';
+
+body {
+  background-color: $color_background;
+}
+
+.container {
+  width: 1012px;
+  height: 960px;
+  margin: 0 155px 0 155px;
+  background-color: $color_container;
+}

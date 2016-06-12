@@ -1,0 +1,32 @@
+.footer {
+
+  margin: 0 50px 40px 30px;
+  background: #E1E1E1;
+  overflow: hidden;
+
+  .footer-menu {
+    float: left;
+    &__item {
+      display: inline-block;
+      width: 116px;
+      padding-top: 12px;
+      height: 28px;
+      color: #000;
+
+      text-align: center;
+      text-decoration: none;
+      font-family: monospace;
+    }
+  }
+
+  .footer-menu__item:hover {
+    display: inline-block;
+    text-decoration: underline;
+  }
+
+  &__copyright {
+    float: right;
+    padding: 12px 20px 0 0 ;
+  }
+}
+

@@ -1,0 +1,19 @@
+.content-menu {
+  display: block;
+  float:left;
+  margin: 0 50px 0px 30px;
+  border: 1px solid #999999;
+  width: 200px;
+  &__item {
+    height: 30px;
+    padding: 15px 0 0 15px;
+    vertical-align: middle;
+    text-align: left;
+    border-bottom: 1px solid #999999;
+  }
+}
+
+.content-menu__item:hover {
+  background-color: #F9F9F9;
+  padding-left: 30px;
+}

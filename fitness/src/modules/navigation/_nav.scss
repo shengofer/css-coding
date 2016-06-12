@@ -1,0 +1,21 @@
+.menu {
+  background-color: #504f4f;
+  margin: 0 50px 40px 30px;
+  &__item {
+    display: inline-block;
+    width: 116px;
+    height: 28px;
+    padding-top: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-family: monospace;
+  }
+}
+
+.menu__item:hover {
+  display: inline-block;
+  background: #3a3a3a;
+  border-left: 1px solid #727272;
+  border-right: 1px solid #727272;
+}
