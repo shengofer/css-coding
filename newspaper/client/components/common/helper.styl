@@ -1,0 +1,21 @@
+@import '../mixins/mixins'
+@import '../sprite'
+@import '../mixins/sprite-mixins'
+
+.photo-icon:after {
+    content: '';
+    display: inline-block;
+    sprite($s-photo_icon);
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+.video-icon:after {
+    content: '';
+    sprite($s-video_icon);
+    display: inline-block;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+}
+
+

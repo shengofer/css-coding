@@ -1,0 +1,45 @@
+@import '../../mixins/mixins'
+@import '../../mixins/sprite-mixins'
+@import '../../common/sprite'
+@import '../../common/vars'
+
+.hot-themes {
+    float: left;
+    height: 30px;
+    width: 620px;
+    margin: 0 20px 20px 0;
+
+    &__title {
+        float: left;
+        width: 120px;
+        height: 100%;
+        color: $hotTheme_title;
+        background-color: $hotTheme_title_background;
+        text-align: center;
+        font-size: 18px;
+        font-family: "PTSans";
+    }
+
+    &__title span {
+        vertical-align: -25%;
+    }
+
+    &__news-title {
+        width: 500px;
+        background-color: $hotTheme_news-title_background;
+        height: 100%;
+        float: left;
+
+    }
+
+    &__news-title-list {
+        margin-left: 5px;
+
+        &__item {
+            display: inline;
+            padding-right: 20px;
+            list-style-type: none;
+            vertical-align: -25%;
+        }
+    }
+}

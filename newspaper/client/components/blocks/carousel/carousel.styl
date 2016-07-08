@@ -1,0 +1,66 @@
+@import '../../mixins/mixins'
+@import '../../mixins/sprite-mixins'
+@import '../../common/sprite'
+@import '../../common/vars'
+
+.carousel {
+    float: left;
+    display: flex;
+    width: 620px;
+    margin-right: 20px;
+    border-bottom: 5px solid red;
+
+    &__image {
+        float: left;
+        width: 375 px;
+    }
+    &__description {
+        padding: 10px 20px;
+        width: 245px;
+        background: $description_background;
+
+        &__title {
+            color: $description_title;
+            font-size: 30px;
+            font-family: "PTSerif";
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        &__body {
+            font-family: "PTSans";
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.286;
+        }
+
+        &__switch {
+            margin-top: 30px;
+            text-align: right;
+
+            &__page:after {
+                content: '';
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                margin-left: 5px;
+                background-repeat: no-repeat;
+                background-image :  url("../assets/img/videos/pag.png");
+            }
+        }
+
+        &__switch:after {
+            content: '';
+            display: inline-block;
+            sprite($s-right_arrow);
+            background-repeat: no-repeat;
+        }
+
+        &__switch:before {
+            content: '';
+            display: inline-block;
+            sprite($s-left_arrow);
+            background-repeat: no-repeat;
+        }
+    }
+}

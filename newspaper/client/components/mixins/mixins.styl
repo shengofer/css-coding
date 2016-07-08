@@ -1,0 +1,33 @@
+@import '../common/sprite'
+@import 'sprite-mixins'
+
+titleWithLine() {
+    width: 100%;
+    margin: 10px 0 20px;
+    border-bottom: 2px solid #333;
+    text-align: center;
+    line-height: 0.1em;
+
+    span {
+        padding: 0 10px;
+        background: #fff;
+    }
+}
+
+titleLine($lineColor, $text-aligh, $line-height) {
+    width: 100%;
+    margin: 10px 0 20px;
+    border-bottom: 2px solid $lineColor;
+    text-align: $text-aligh;
+    line-height: $line-height;
+    span {
+        background: #fff;
+    }
+}
+
+photoIcon($sprite) {
+    display: inline-block;
+    sprite($sprite);
+    background-repeat: no-repeat;
+}
+

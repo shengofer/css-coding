@@ -1,0 +1,44 @@
+@import '../../mixins/mixins'
+@import '../../mixins/sprite-mixins'
+@import '../../common/sprite'
+@import '../../common/vars'
+
+.main-news {
+    display: inline-block;
+    width: 620px;
+    margin-top: 20px;
+
+    &__title-line {
+        titleLine(black, left, 10px);
+
+        span {
+            padding-right: 5px;
+        }
+    }
+
+}
+
+.news-list {
+    display: inline-block;
+
+    :last-child {
+        margin-right: 0;
+    }
+
+    &__item {
+        float: left;
+        display: block;
+        width: 142px;
+        margin-right: 17px;
+
+        &__img {
+            float: left;
+            margin-bottom: 5px;
+        }
+
+        &__title {
+                font-size:14px;
+        }
+    }
+}
+

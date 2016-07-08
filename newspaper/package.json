@@ -1,0 +1,37 @@
+{
+  "name": "hw21bemv3",
+  "version": "1.0.0",
+  "description": "sdf",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install && gulp build",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "BEM"
+  ],
+  "author": "Pavlo_Shenhofer",
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.14.1",
+    "browser-sync": "^2.10.0",
+    "del": "^2.1.0",
+    "express": "^4.13.3",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-arialinter": "0.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-less-sourcemap": "^1.4.2",
+    "gulp-live-server": "0.0.29",
+    "gulp-livereload": "^3.7.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.1.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.6",
+    "gulp.spritesmith": "^6.0.0",
+    "require-dir": "^0.3.0"
+  }
+}

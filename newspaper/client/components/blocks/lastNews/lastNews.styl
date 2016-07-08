@@ -1,0 +1,48 @@
+@import '../../mixins/mixins'
+@import '../../mixins/sprite-mixins'
+@import '../../common/sprite'
+@import '../../common/vars'
+
+.last-news {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 20px 20px 0 0;
+
+    &__list {
+        padding-left: 15px;
+    }
+
+    &__title-line {
+        titleLine($lastNews_title-line, left, 10px);
+        color: $lastNews_title;
+
+        span {
+            padding-right: 5px;
+        }
+    }
+}
+
+.last-news-list {
+    list-style-type: disc;
+
+    &__item {
+        font-size: 14px;
+        &__title {
+        }
+
+        &__link{
+            text-decoration: none;
+            color:$lastNews_link;
+        }
+    }
+
+    &__item:hover {
+        color: $lastNews_title_hover;
+        text-decoration: underline;
+        cursor: url('assets/img/black-cursor-small.png'), auto;
+    }
+}
+
+
+
+

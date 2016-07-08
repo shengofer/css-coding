@@ -1,0 +1,54 @@
+@import '../../mixins/mixins'
+@import '../../common/vars'
+
+.videos {
+    width: 300px;
+    float: right;
+    margin-top: -50px;
+
+    &__title-line {
+        titleWithLine();
+        titleLine($videos_title-line, center, 0px);
+        color: $videos_title;
+    }
+}
+
+.video-list {
+
+    &__item {
+        display: inline-flex;
+        margin-bottom: 10px;
+
+        &__img {
+        }
+
+        &__title {
+            float: right;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+.videos-more {
+
+    &__title-line {
+        titleLine($videos_more-video_title-line, left, 25px);
+        border-bottom: 5px solid $videos_more-video_title-line;
+        color: $videos_more-video_title;
+    }
+}
+
+.red-photo-icon {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.red-photo-icon:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    sprite($s-red_photo_icon);
+}

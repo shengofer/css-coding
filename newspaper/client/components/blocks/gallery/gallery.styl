@@ -1,0 +1,42 @@
+@import '../../mixins/mixins'
+@import '../../sprite'
+@import '../../mixins/sprite-mixins'
+
+.gallery {
+    float: left;
+    box-sizing: border-box;
+    width: 220px;
+    padding: 20px 0 0 0;
+}
+
+.gallery-list {
+
+    &__item {
+        margin-bottom: 20px;
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &__img {
+            float: left;
+        }
+    }
+}
+
+.violet-video-icon {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+
+    &:after {
+        content: '';
+        position: absolute;
+        sprite($s-violet_video_icon);
+        left: 5px;
+        bottom: 5px;
+    }
+}
+
+

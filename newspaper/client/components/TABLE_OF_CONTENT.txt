@@ -1,0 +1,28 @@
+
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * BASE
+ * reset...............Reset style to general.
+ *
+ * BLOCKS
+ * carousel............carousel blockon main page.
+ * gallery.............gallery block on main page.
+ * hotThemes...........hot themes block on top of main page.
+ * lastNews...........last news block on main page.
+ * mainNews...........main news block on main page.
+ * newsFeed...........newsfeed  block on main page.
+ * videos.............videos  block on right side of main page.
+ *
+ * MIXINS
+ * mixins...............Useful mixins.
+ * sprite-mixins........Useful mixins for sprite.
+ *
+ * COMMON
+ * container............general style for site
+ * helper...............common styles for block
+ * sprite...............list of sprite
+ * vars.................variable of site
+ *
+ */
